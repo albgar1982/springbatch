@@ -9,17 +9,11 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameters;
 
-import javax.sql.DataSource;
 import java.util.Arrays;
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 @SpringBootApplication
 public class Application implements CommandLineRunner {
-
-    @Autowired
-    private DataSource dataSource;
 
     @Autowired
     private JobLauncher jobLauncher;
